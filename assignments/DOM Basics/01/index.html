@@ -11,6 +11,28 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      var p = document.createElement('p');
+      p.textContent = 'Hello Javascript!';
+      p.innerHTML = `I love <strong>Javascript</strong>`;
+      document.body.append(p);
+
+      var ul = document.createElement('ul');
+      var firstli = document.createElement('li');
+      var secondli = document.createElement('li');
+      var thirdli = document.createElement('li');
+
+      firstli.innerHTML = 'Buy groceries';
+      secondli.innerHTML = 'Feed the cat';
+      thirdli.innerHTML = 'Do laundry';
+
+      ul.appendChild(firstli);
+      ul.appendChild(secondli);
+      ul.appendChild(thirdli);
+      document.body.appendChild(ul);
+
+      firstli.remove();
+      //or
+      ul.firstChild.remove();
     </script>
   </body>
 </html>

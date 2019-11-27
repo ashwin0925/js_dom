@@ -13,4 +13,16 @@
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
   </body>
+  <script>
+    document.body.style.fontFamily = "Arial, sans-serif";
+    document.getElementById('nickname').innerText = "ash";
+    document.getElementById('favorites').innerText = 'travelling';
+    document.getElementById('hometown').innerText = 'bengaluru';
+
+    document.querySelectorAll('li').forEach(n => n.className = 'listitem');
+    document.querySelectorAll(".listitem").forEach(e => e.style.color = "red");
+    let image = document.createElement('img');
+    image.src ='https://avatars2.githubusercontent.com/u/54019023?s=400&u=b292a51e79d104baeddae255781de21c6f7a497f&v=4';
+    document.body.appendChild(image)
+  </script>
 </html>
